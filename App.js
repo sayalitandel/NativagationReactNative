@@ -16,13 +16,13 @@ export default function App() {
  
   return (
     <View style={styles.container}>
-      <Image style={styles.image} source={require("./assets/log2.png")} />
+      <Image style={styles.image} source={require("./assets/log2.jpg")} />
  
       <StatusBar style="auto" />
       <View style={styles.inputView}>
         <TextInput
           style={styles.TextInput}
-          placeholder="Email."
+          placeholder="Email"
           placeholderTextColor="#003f5c"
           onChangeText={(email) => setEmail(email)}
         />
@@ -31,7 +31,7 @@ export default function App() {
       <View style={styles.inputView}>
         <TextInput
           style={styles.TextInput}
-          placeholder="Password."
+          placeholder="Password"
           placeholderTextColor="#003f5c"
           secureTextEntry={true}
           onChangeText={(password) => setPassword(password)}
@@ -58,11 +58,13 @@ const styles = StyleSheet.create({
   },
  
   image: {
+    width: 320,
+    height: 320,
     marginBottom: 40,
   },
  
   inputView: {
-    backgroundColor: "#FFC0CB",
+    backgroundColor: "#8BE3E3",
     borderRadius: 30,
     width: "70%",
     height: 45,
@@ -81,6 +83,7 @@ const styles = StyleSheet.create({
   forgot_button: {
     height: 30,
     marginBottom: 30,
+    marginLeft: 20,
   },
  
   loginBtn: {
@@ -90,6 +93,6 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     marginTop: 40,
-    backgroundColor: "#FF1493",
+    backgroundColor: "#8BE3E3",
   },
 });
